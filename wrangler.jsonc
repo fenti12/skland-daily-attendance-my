@@ -1,0 +1,18 @@
+{
+  "$schema": "https://cdn.jsdelivr.net/npm/wrangler@4.54.0/config-schema.json",
+  "compatibility_date": "2025-12-26",
+  "name": "skland-daily-attendance-my",
+  "compatibility_flags": ["nodejs_als"],
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "c13e172d37c94c5fa84f601e99f3953e"
+    }
+  ],
+  "triggers": {
+    "crons": ["30 0/2 * * *"]
+  }
+}
